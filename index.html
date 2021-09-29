@@ -16,7 +16,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     
-    
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <title>Yiğitcan Öztürk</title>
 </head>
@@ -682,7 +682,14 @@
                         <textarea class="contact__input" name="" id="" cols="0" rows="7" required></textarea>
                     </div>
                     <div>
-
+                        
+                        <div class="reCapthcha">
+                            <form action="?" method="POST">
+                                <div class="g-recaptcha" data-sitekey="6LeMd5ocAAAAAGfSZgxTyYySCpYckOgk9-Um8Ek5" theme="dark"></div>
+                                <br/>
+                                <input type="submit" value="Submit">
+                              </form>
+                        </div>
                         <Button type="submit" style="border: none;"
                             class="button button--flex project__icon mail__send" id="exampleModalToggleLabel">
                             Proje Önerisi
@@ -732,7 +739,6 @@
         </div>
     </footer>
 
-
     <!-- =============== SCROOL TOP =============== -->
     <a href="#" class="scrollup" id="scroll-up">
         <i class="uil uil-arrow-up scrollup__icon"></i>
@@ -747,7 +753,9 @@
     <!-- =============== sweetalert =============== -->
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+    async defer>
+</script>
 </body>
 
 </html>
