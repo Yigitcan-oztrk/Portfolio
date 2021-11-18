@@ -928,8 +928,8 @@ body.dark-theme{
 /* FOR SMALL DEVİCES */
 @media screen and (max-width: 350px){
     .container{
-        margin-left: var(--mb-1);
-        margin-right: var(--mb-1);
+        margin-left: var(--mb-0-25);
+        margin-right: var(--mb-0-25);
     }
     .nav__menu{
         padding: 2rem .25rem 4rem;
@@ -1125,6 +1125,7 @@ body.dark-theme{
     }
     .project__data{
         padding-top: .8rem;
+        text-align: center;
     }
     .footer__container{
         grid-template-columns: repeat(3, 1fr);
